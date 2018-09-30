@@ -2,50 +2,38 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<style>
-
-img {
-  border-radius: 60%;
-}
-</style>
 <title>dasari venkat A01</title>
-<link rel="stylesheet" type="text/css" href="venkat.css">
+  <link rel="stylesheet" type="text/css" href="contact.css">
+
+
+  <div class="topnav">
+    <a  href="index.html">Home</a>
+    <a href="mypage.html">MyPage</a>
+    <a class="active" href="contactus.html">Contact</a>
+
+  </div>
 </head>
-
 <body>
+<div class="container">
+  <form action="action_page.php">
 
-<ul>
-  <li><a class="active" href="C:\Webapps\A01\index.html">Home</a></li>
-  <li><a href="C:\Webapps\A01\mypage.html">Mypage</a></li>
-  <li><a href="C:\Webapps\A01\contactus.html">Contact</a></li>
-  
-</ul>
-<body><div id="after_submit"></div>
-    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-      <div class="row">
-        <label style="color:yellow " name="name">Your name:</label><br />
-        <input style="color:yellow; id="name" class="input" name="name" type="text" value="" size="30" /><br />
-        <span id="name_validation" class="error_message"></span>
-      </div>
-      <div class="row">
-        <label style="color:yellow"  name="email">Your email:</label><br />
-        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-        <span id="email_validation" class="error_message"></span>
-      </div>
-      <div class="row">
-         <label style="color:yellow; class="required" for="question">Your question:</label><br />
-        <textarea id="question" class="input" name="question" rows="7" cols="30"></textarea><br />
-        <span id="question_validation" class="error_message"></span>
-      </div>
-        
-        <input id="submit_button" type="submit" value="Send email" />
-    </form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    
+    <label for="cnumber">Contact Number </label>
+    <input type="text" id="cnumber" name="contactnumber" placeholder="Your contact number..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="Done" value="Done">
+
+  </form>
+</div>
 </body>
-
-
-
-
-</body>
-
 
 </html>
